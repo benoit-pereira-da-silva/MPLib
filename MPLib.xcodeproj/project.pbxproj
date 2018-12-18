@@ -1,0 +1,1148 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"MPLib::MPLibPackageTests::ProductTarget" /* MPLibPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_112 /* Build configuration list for PBXAggregateTarget "MPLibPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_115 /* PBXTargetDependency */,
+			);
+			name = MPLibPackageTests;
+			productName = MPLibPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_100 /* Tolerance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Tolerance::Tolerance::Product" /* Tolerance.framework */; };
+		OBJ_101 /* Globals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Globals::Globals::Product" /* Globals.framework */; };
+		OBJ_110 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_121 /* MPLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* MPLibTests.swift */; };
+		OBJ_122 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* XCTestManifests.swift */; };
+		OBJ_124 /* MPLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "MPLib::MPLib::Product" /* MPLib.framework */; };
+		OBJ_125 /* HTTPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPClient::HTTPClient::Product" /* HTTPClient.framework */; };
+		OBJ_126 /* Tolerance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Tolerance::Tolerance::Product" /* Tolerance.framework */; };
+		OBJ_127 /* Globals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Globals::Globals::Product" /* Globals.framework */; };
+		OBJ_136 /* ConcreteCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ConcreteCoder.swift */; };
+		OBJ_137 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* JSON.swift */; };
+		OBJ_138 /* JSONCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* JSONCoder.swift */; };
+		OBJ_139 /* JSONPatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* JSONPatcher.swift */; };
+		OBJ_140 /* Tolerant.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Tolerant.swift */; };
+		OBJ_147 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Package.swift */; };
+		OBJ_54 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Globals.swift */; };
+		OBJ_61 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Package.swift */; };
+		OBJ_67 /* AuthContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* AuthContext.swift */; };
+		OBJ_68 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Credentials.swift */; };
+		OBJ_69 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* HTTPClient.swift */; };
+		OBJ_70 /* RequestDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* RequestDescriptor.swift */; };
+		OBJ_71 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Storage.swift */; };
+		OBJ_73 /* Tolerance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Tolerance::Tolerance::Product" /* Tolerance.framework */; };
+		OBJ_74 /* Globals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Globals::Globals::Product" /* Globals.framework */; };
+		OBJ_83 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Package.swift */; };
+		OBJ_89 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Configuration.swift */; };
+		OBJ_90 /* ImagesComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ImagesComparator.swift */; };
+		OBJ_91 /* ShotsDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ShotsDetector.swift */; };
+		OBJ_92 /* TimeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* TimeExtensions.swift */; };
+		OBJ_93 /* VideoFrameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* VideoFrameGenerator.swift */; };
+		OBJ_94 /* VideoImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* VideoImageGenerator.swift */; };
+		OBJ_95 /* VideoMetadataExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* VideoMetadataExtractor.swift */; };
+		OBJ_96 /* VideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* VideoSource.swift */; };
+		OBJ_99 /* HTTPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPClient::HTTPClient::Product" /* HTTPClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E517B02321C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HTTPClient::HTTPClient";
+			remoteInfo = HTTPClient;
+		};
+		E517B02421C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Tolerance::Tolerance";
+			remoteInfo = Tolerance;
+		};
+		E517B02521C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Globals::Globals";
+			remoteInfo = Globals;
+		};
+		E517B02621C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Tolerance::Tolerance";
+			remoteInfo = Tolerance;
+		};
+		E517B02721C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Globals::Globals";
+			remoteInfo = Globals;
+		};
+		E517B02821C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "MPLib::MPLib";
+			remoteInfo = MPLib;
+		};
+		E517B02921C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HTTPClient::HTTPClient";
+			remoteInfo = HTTPClient;
+		};
+		E517B02A21C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Tolerance::Tolerance";
+			remoteInfo = Tolerance;
+		};
+		E517B02B21C926AC001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Globals::Globals";
+			remoteInfo = Globals;
+		};
+		E517B02C21C926AD001F5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "MPLib::MPLibTests";
+			remoteInfo = MPLibTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Globals::Globals::Product" /* Globals.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Globals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"HTTPClient::HTTPClient::Product" /* HTTPClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HTTPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"MPLib::MPLib::Product" /* MPLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"MPLib::MPLibTests::Product" /* MPLibTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MPLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* ImagesComparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesComparator.swift; sourceTree = "<group>"; };
+		OBJ_11 /* ShotsDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotsDetector.swift; sourceTree = "<group>"; };
+		OBJ_12 /* TimeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeExtensions.swift; sourceTree = "<group>"; };
+		OBJ_13 /* VideoFrameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFrameGenerator.swift; sourceTree = "<group>"; };
+		OBJ_14 /* VideoImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoImageGenerator.swift; sourceTree = "<group>"; };
+		OBJ_15 /* VideoMetadataExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMetadataExtractor.swift; sourceTree = "<group>"; };
+		OBJ_16 /* VideoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSource.swift; sourceTree = "<group>"; };
+		OBJ_20 /* MPLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLibTests.swift; sourceTree = "<group>"; };
+		OBJ_21 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_25 /* AuthContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		OBJ_27 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		OBJ_28 /* RequestDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDescriptor.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/bpds/Documents/Entrepot/Git/Public-projects/MPLib/.build/checkouts/HTTPClient--3513380252989474803/Package.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* ConcreteCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteCoder.swift; sourceTree = "<group>"; };
+		OBJ_34 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		OBJ_35 /* JSONCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCoder.swift; sourceTree = "<group>"; };
+		OBJ_36 /* JSONPatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPatcher.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Tolerant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tolerant.swift; sourceTree = "<group>"; };
+		OBJ_38 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/bpds/Documents/Entrepot/Git/Public-projects/MPLib/.build/checkouts/Tolerance--3459808254507576719/Package.swift"; sourceTree = "<group>"; };
+		OBJ_41 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/bpds/Documents/Entrepot/Git/Public-projects/MPLib/.build/checkouts/Globals--1228481006921854703/Package.swift"; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		"Tolerance::Tolerance::Product" /* Tolerance.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tolerance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_124 /* MPLib.framework in Frameworks */,
+				OBJ_125 /* HTTPClient.framework in Frameworks */,
+				OBJ_126 /* Tolerance.framework in Frameworks */,
+				OBJ_127 /* Globals.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_73 /* Tolerance.framework in Frameworks */,
+				OBJ_74 /* Globals.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_99 /* HTTPClient.framework in Frameworks */,
+				OBJ_100 /* Tolerance.framework in Frameworks */,
+				OBJ_101 /* Globals.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_18 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* MPLibTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* MPLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* MPLibTests.swift */,
+				OBJ_21 /* XCTestManifests.swift */,
+			);
+			name = MPLibTests;
+			path = Tests/MPLibTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_22 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* HTTPClient 1.0.2 */,
+				OBJ_31 /* Tolerance 1.0.0 */,
+				OBJ_39 /* Globals 1.0.1 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* HTTPClient 1.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* HTTPClient */,
+				OBJ_30 /* Package.swift */,
+			);
+			name = "HTTPClient 1.0.2";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_24 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* AuthContext.swift */,
+				OBJ_26 /* Credentials.swift */,
+				OBJ_27 /* HTTPClient.swift */,
+				OBJ_28 /* RequestDescriptor.swift */,
+				OBJ_29 /* Storage.swift */,
+			);
+			name = HTTPClient;
+			path = ".build/checkouts/HTTPClient--3513380252989474803/Sources/HTTPClient";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_31 /* Tolerance 1.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* Tolerance */,
+				OBJ_38 /* Package.swift */,
+			);
+			name = "Tolerance 1.0.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_32 /* Tolerance */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* ConcreteCoder.swift */,
+				OBJ_34 /* JSON.swift */,
+				OBJ_35 /* JSONCoder.swift */,
+				OBJ_36 /* JSONPatcher.swift */,
+				OBJ_37 /* Tolerant.swift */,
+			);
+			name = Tolerance;
+			path = ".build/checkouts/Tolerance--3459808254507576719/Sources/Tolerance";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* Globals 1.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* Globals */,
+				OBJ_42 /* Package.swift */,
+			);
+			name = "Globals 1.0.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_40 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* Globals.swift */,
+			);
+			name = Globals;
+			path = ".build/checkouts/Globals--1228481006921854703/Sources/Globals";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"MPLib::MPLib::Product" /* MPLib.framework */,
+				"Tolerance::Tolerance::Product" /* Tolerance.framework */,
+				"HTTPClient::HTTPClient::Product" /* HTTPClient.framework */,
+				"Globals::Globals::Product" /* Globals.framework */,
+				"MPLib::MPLibTests::Product" /* MPLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_18 /* Tests */,
+				OBJ_22 /* Dependencies */,
+				OBJ_43 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* MPLib */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* MPLib */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Configuration.swift */,
+				OBJ_10 /* ImagesComparator.swift */,
+				OBJ_11 /* ShotsDetector.swift */,
+				OBJ_12 /* TimeExtensions.swift */,
+				OBJ_13 /* VideoFrameGenerator.swift */,
+				OBJ_14 /* VideoImageGenerator.swift */,
+				OBJ_15 /* VideoMetadataExtractor.swift */,
+				OBJ_16 /* VideoSource.swift */,
+			);
+			name = MPLib;
+			path = Sources/MPLib;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Globals::Globals" /* Globals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "Globals" */;
+			buildPhases = (
+				OBJ_53 /* Sources */,
+				OBJ_55 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Globals;
+			productName = Globals;
+			productReference = "Globals::Globals::Product" /* Globals.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Globals::SwiftPMPackageDescription" /* GlobalsPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_57 /* Build configuration list for PBXNativeTarget "GlobalsPackageDescription" */;
+			buildPhases = (
+				OBJ_60 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlobalsPackageDescription;
+			productName = GlobalsPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"HTTPClient::HTTPClient" /* HTTPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_63 /* Build configuration list for PBXNativeTarget "HTTPClient" */;
+			buildPhases = (
+				OBJ_66 /* Sources */,
+				OBJ_72 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_75 /* PBXTargetDependency */,
+				OBJ_77 /* PBXTargetDependency */,
+			);
+			name = HTTPClient;
+			productName = HTTPClient;
+			productReference = "HTTPClient::HTTPClient::Product" /* HTTPClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"HTTPClient::SwiftPMPackageDescription" /* HTTPClientPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "HTTPClientPackageDescription" */;
+			buildPhases = (
+				OBJ_82 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTTPClientPackageDescription;
+			productName = HTTPClientPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"MPLib::MPLib" /* MPLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_85 /* Build configuration list for PBXNativeTarget "MPLib" */;
+			buildPhases = (
+				OBJ_88 /* Sources */,
+				OBJ_98 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_102 /* PBXTargetDependency */,
+				OBJ_103 /* PBXTargetDependency */,
+				OBJ_104 /* PBXTargetDependency */,
+			);
+			name = MPLib;
+			productName = MPLib;
+			productReference = "MPLib::MPLib::Product" /* MPLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"MPLib::MPLibTests" /* MPLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_117 /* Build configuration list for PBXNativeTarget "MPLibTests" */;
+			buildPhases = (
+				OBJ_120 /* Sources */,
+				OBJ_123 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_128 /* PBXTargetDependency */,
+				OBJ_129 /* PBXTargetDependency */,
+				OBJ_130 /* PBXTargetDependency */,
+				OBJ_131 /* PBXTargetDependency */,
+			);
+			name = MPLibTests;
+			productName = MPLibTests;
+			productReference = "MPLib::MPLibTests::Product" /* MPLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"MPLib::SwiftPMPackageDescription" /* MPLibPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_106 /* Build configuration list for PBXNativeTarget "MPLibPackageDescription" */;
+			buildPhases = (
+				OBJ_109 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPLibPackageDescription;
+			productName = MPLibPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Tolerance::SwiftPMPackageDescription" /* TolerancePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_143 /* Build configuration list for PBXNativeTarget "TolerancePackageDescription" */;
+			buildPhases = (
+				OBJ_146 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TolerancePackageDescription;
+			productName = TolerancePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Tolerance::Tolerance" /* Tolerance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_132 /* Build configuration list for PBXNativeTarget "Tolerance" */;
+			buildPhases = (
+				OBJ_135 /* Sources */,
+				OBJ_141 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tolerance;
+			productName = Tolerance;
+			productReference = "Tolerance::Tolerance::Product" /* Tolerance.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "MPLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Globals::Globals" /* Globals */,
+				"Globals::SwiftPMPackageDescription" /* GlobalsPackageDescription */,
+				"HTTPClient::HTTPClient" /* HTTPClient */,
+				"HTTPClient::SwiftPMPackageDescription" /* HTTPClientPackageDescription */,
+				"MPLib::MPLib" /* MPLib */,
+				"MPLib::SwiftPMPackageDescription" /* MPLibPackageDescription */,
+				"MPLib::MPLibPackageTests::ProductTarget" /* MPLibPackageTests */,
+				"MPLib::MPLibTests" /* MPLibTests */,
+				"Tolerance::Tolerance" /* Tolerance */,
+				"Tolerance::SwiftPMPackageDescription" /* TolerancePackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_109 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_110 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_121 /* MPLibTests.swift in Sources */,
+				OBJ_122 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_136 /* ConcreteCoder.swift in Sources */,
+				OBJ_137 /* JSON.swift in Sources */,
+				OBJ_138 /* JSONCoder.swift in Sources */,
+				OBJ_139 /* JSONPatcher.swift in Sources */,
+				OBJ_140 /* Tolerant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_147 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_54 /* Globals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_67 /* AuthContext.swift in Sources */,
+				OBJ_68 /* Credentials.swift in Sources */,
+				OBJ_69 /* HTTPClient.swift in Sources */,
+				OBJ_70 /* RequestDescriptor.swift in Sources */,
+				OBJ_71 /* Storage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_83 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_89 /* Configuration.swift in Sources */,
+				OBJ_90 /* ImagesComparator.swift in Sources */,
+				OBJ_91 /* ShotsDetector.swift in Sources */,
+				OBJ_92 /* TimeExtensions.swift in Sources */,
+				OBJ_93 /* VideoFrameGenerator.swift in Sources */,
+				OBJ_94 /* VideoImageGenerator.swift in Sources */,
+				OBJ_95 /* VideoMetadataExtractor.swift in Sources */,
+				OBJ_96 /* VideoSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HTTPClient::HTTPClient" /* HTTPClient */;
+			targetProxy = E517B02321C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Tolerance::Tolerance" /* Tolerance */;
+			targetProxy = E517B02621C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Globals::Globals" /* Globals */;
+			targetProxy = E517B02721C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "MPLib::MPLibTests" /* MPLibTests */;
+			targetProxy = E517B02C21C926AD001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "MPLib::MPLib" /* MPLib */;
+			targetProxy = E517B02821C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HTTPClient::HTTPClient" /* HTTPClient */;
+			targetProxy = E517B02921C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Tolerance::Tolerance" /* Tolerance */;
+			targetProxy = E517B02A21C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Globals::Globals" /* Globals */;
+			targetProxy = E517B02B21C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Tolerance::Tolerance" /* Tolerance */;
+			targetProxy = E517B02421C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+		OBJ_77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Globals::Globals" /* Globals */;
+			targetProxy = E517B02521C926AC001F5357 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/MPLibTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MPLibTests;
+			};
+			name = Debug;
+		};
+		OBJ_119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/MPLibTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MPLibTests;
+			};
+			name = Release;
+		};
+		OBJ_133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/Tolerance_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Tolerance;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Tolerance;
+			};
+			name = Debug;
+		};
+		OBJ_134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/Tolerance_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Tolerance;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Tolerance;
+			};
+			name = Release;
+		};
+		OBJ_144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/Globals_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Globals;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Globals;
+			};
+			name = Debug;
+		};
+		OBJ_52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/Globals_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Globals;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Globals;
+			};
+			name = Release;
+		};
+		OBJ_58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/HTTPClient_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HTTPClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = HTTPClient;
+			};
+			name = Debug;
+		};
+		OBJ_65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/HTTPClient_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HTTPClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = HTTPClient;
+			};
+			name = Release;
+		};
+		OBJ_80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/MPLib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MPLib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MPLib;
+			};
+			name = Debug;
+		};
+		OBJ_87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MPLib.xcodeproj/MPLib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MPLib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MPLib;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_106 /* Build configuration list for PBXNativeTarget "MPLibPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_107 /* Debug */,
+				OBJ_108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_112 /* Build configuration list for PBXAggregateTarget "MPLibPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_113 /* Debug */,
+				OBJ_114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_117 /* Build configuration list for PBXNativeTarget "MPLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_118 /* Debug */,
+				OBJ_119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_132 /* Build configuration list for PBXNativeTarget "Tolerance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_133 /* Debug */,
+				OBJ_134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_143 /* Build configuration list for PBXNativeTarget "TolerancePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_144 /* Debug */,
+				OBJ_145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "MPLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_50 /* Build configuration list for PBXNativeTarget "Globals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_51 /* Debug */,
+				OBJ_52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_57 /* Build configuration list for PBXNativeTarget "GlobalsPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_58 /* Debug */,
+				OBJ_59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_63 /* Build configuration list for PBXNativeTarget "HTTPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_64 /* Debug */,
+				OBJ_65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_79 /* Build configuration list for PBXNativeTarget "HTTPClientPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_80 /* Debug */,
+				OBJ_81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_85 /* Build configuration list for PBXNativeTarget "MPLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_86 /* Debug */,
+				OBJ_87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
