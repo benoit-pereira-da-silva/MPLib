@@ -4,11 +4,6 @@
 
 MPLib is a media processing library built on the top of Apple Shoulders (AVFoundation, CoreImage, ...). It is used by [mp commandline tool](https://github.com/benoit-pereira-da-silva/mp)
 
-
-# SoundWaveForm
-
-Allows to extract sound samples from Video or Sounds files very efficiently (it relies on the Accelerate framework). SoundWaveForm expose an optimized cross platform drawing that renders the waveform into an Image.
-
 ## It supports 
 
 - macOS 10.11 & + 
