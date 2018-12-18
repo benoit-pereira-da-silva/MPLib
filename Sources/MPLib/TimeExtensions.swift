@@ -8,9 +8,9 @@
 import Foundation
 import CoreMedia
 
-extension Int{
+public extension Int{
 
-    func paddedInt(numberOfDigit: Int=3)->String {
+    public func paddedInt(numberOfDigit: Int=3)->String {
         var s="\(self)"
         while s.count < numberOfDigit {
             s="0"+s
@@ -20,19 +20,19 @@ extension Int{
 }
 
 
-extension Double{
+public extension Double{
     
-    func toCMTime(_ preferredTimescale:Int32 = Configuration.defaultTimeScale)->CMTime{
+    public func toCMTime(_ preferredTimescale:Int32 = MPLibConfiguration.defaultTimeScale)->CMTime{
         return CMTime(seconds: self, preferredTimescale: preferredTimescale)
     }
     
     
-    func roundTo(places:Int) -> Double {
+    public func roundTo(places:Int) -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
     
-    func formattedString(nbOfDigit:Int=2)->String{
+    public func formattedString(nbOfDigit:Int=2)->String{
         let format = "%.0\(nbOfDigit)f"
         return String(format:format,self)
     }
@@ -65,7 +65,7 @@ import Cocoa
 
 extension CMTime{
 
-    func timeCodeRepresentation(_ fps: Double,showImageNumber:Bool=true)->String {
+    public func timeCodeRepresentation(_ fps: Double,showImageNumber:Bool=true)->String {
         let r=self.timeCodeComponents(fps)
         var imagePadding=1
         if fps > 10 && fps < 100 {
@@ -80,7 +80,7 @@ extension CMTime{
         }
     }
 
-    func timeCodeComponents(_ fps: Double)->(hours: Int, minutes: Int, seconds: Int, imageNumber: Int, fps: Double) {
+    public func timeCodeComponents(_ fps: Double)->(hours: Int, minutes: Int, seconds: Int, imageNumber: Int, fps: Double) {
         guard fps != 0 else{
             return ( 0,0,0,0, fps)
         }

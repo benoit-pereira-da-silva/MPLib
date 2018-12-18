@@ -12,7 +12,7 @@ import Foundation
 
 public let MPLib_VERSION: String = "1.0.0"
 
-struct  Configuration {
+public struct  MPLibConfiguration {
     static var componentsPath:String = ""
 
     // we use a high timescale for precision purpose

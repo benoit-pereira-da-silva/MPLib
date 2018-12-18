@@ -12,10 +12,10 @@ import AVKit
 import CoreMedia
 
 
-enum VideoMetadataExtractorError:Error{
+public enum VideoMetadataExtractorError:Error{
     case message(_ message:String)
 }
-struct VideoMetadataExtractor{
+public struct VideoMetadataExtractor{
 
 
     // MARK: - AVAssets metadata extraction
@@ -30,7 +30,7 @@ struct VideoMetadataExtractor{
      - parameter failure: called on failure extraction on the main queue
      - parameter acquireSecurizedUrl: if set to false we do not use sandboxed
      */
-    static func extractMetadataFromMovieAtURL( _ url: URL,
+    public static func extractMetadataFromMovieAtURL( _ url: URL,
                                                success:@escaping (_ origin: Double?, _ fps: Double, _ duration: Double,_ width:Float, _ height:Float,_ url:URL)->(),
                                                failure:@escaping (_ message: String,_ url:URL)->()) ->(){
         syncOnMain{

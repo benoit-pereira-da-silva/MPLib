@@ -69,32 +69,32 @@ struct TimedImage {
 }
 
 
-protocol PrintDelegate {
+public protocol PrintDelegate {
     func printIfVerbose(_ message: Any)
     func printAlways(_ message: Any)
 }
 
-class ShotsDetector{
+public class ShotsDetector{
 
-    let startTime: CMTime
-    let endTime: CMTime
-    let movie: AVMovie
-    var frameDuration: CMTime { return  (1 / self.source.fps).toCMTime() }
-    var totalNumber: Int64 {return Int64((self.endTime - self.startTime).seconds * self.source.fps)}
+    public let startTime: CMTime
+    public let endTime: CMTime
+    public let movie: AVMovie
+    public var frameDuration: CMTime { return  (1 / self.source.fps).toCMTime() }
+    public var totalNumber: Int64 {return Int64((self.endTime - self.startTime).seconds * self.source.fps)}
 
-    var printDelegate:PrintDelegate?
+    public var printDelegate:PrintDelegate?
 
     // Concurrency.
-    var maxConcurrentComparison: Int = 8
+    public var maxConcurrentComparison: Int = 8
     
     // The shot detection treshold
-    var differenceThreshold:Int = 40
-    var cumulatedDifferences:Int = 0 // used to compute average difference
-    var minDurationBetweenTwoShotsInSeconds:Double = 1
+    public var differenceThreshold:Int = 40
+    public var cumulatedDifferences:Int = 0 // used to compute average difference
+    public var minDurationBetweenTwoShotsInSeconds:Double = 1
 
-    var result: ShotsDetectionResult
-    var source: VideoSource { return self.result.source }
-    var shots: [Shot] { return self.result.shots }
+    public var result: ShotsDetectionResult
+    public var source: VideoSource { return self.result.source }
+    public var shots: [Shot] { return self.result.shots }
 
 
     fileprivate let bunchSize:Int = 64
@@ -131,7 +131,7 @@ class ShotsDetector{
 
 
 
-    init(source: VideoSource, startTime: CMTime, endTime: CMTime) throws{
+    public init(source: VideoSource, startTime: CMTime, endTime: CMTime) throws{
 
         self.movie = AVMovie(url: source.url)
         self.result = ShotsDetectionResult(source: source, shots: [Shot](), stats: ShotsStats())
@@ -158,14 +158,14 @@ class ShotsDetector{
         self._imageGenerator.requestedTimeToleranceBefore = CMTime.zero
     }
     
-    func start(){
+    public func start(){
         self.progress.totalUnitCount = self.totalNumber
         self.result.stats.numberOfFrames = Int(self.totalNumber)
         self.result.stats.frameDuration = self.frameDuration.seconds
         self._nextBunch()
     }
     
-    func cancel(){
+    public func cancel(){
         self._resume = false
     }
     
