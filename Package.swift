@@ -12,6 +12,7 @@ let package = Package(
             targets: ["MPLib"]),
     ],
     dependencies: [
+        .package(url:"https://github.com/benoit-pereira-da-silva/HMAC", from: "1.0.0"),
         .package(url:"https://github.com/Bartlebys/Globals", from: "1.0.0"),
         .package(url:"https://github.com/Bartlebys/Tolerance", from: "1.0.0"),
         .package(url:"https://github.com/benoit-pereira-da-silva/HTTPClient", from: "1.0.0"),
@@ -21,7 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "MPLib",
-            dependencies: ["Globals","Tolerance", "HTTPClient"]),
+            dependencies: ["HMAC","Globals","Tolerance", "HTTPClient"]),
         .testTarget(
             name: "MPLibTests",
             dependencies: ["MPLib"]),
