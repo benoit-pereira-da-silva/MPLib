@@ -86,6 +86,7 @@ public class ShotsDetector{
 
     // Concurrency.
     public var maxConcurrentComparison: Int = 8
+    public var comparisonQos: QualityOfService = QualityOfService.userInitiated
     
     // The shot detection treshold
     public var differenceThreshold:Int = 40
@@ -242,7 +243,7 @@ public class ShotsDetector{
         
         let operationQueue:OperationQueue = OperationQueue.init()
         operationQueue.maxConcurrentOperationCount = self.maxConcurrentComparison
-        operationQueue.qualityOfService = .userInteractive
+        operationQueue.qualityOfService = self.comparisonQos
         
         for (i,timedImage) in self._cachedBunch.enumerated(){
             operationQueue.addOperation {
