@@ -6,10 +6,18 @@
 //
 
 import Foundation
-import AppKit
 #if !USE_EMBEDDED_MODULES
 import Globals
 #endif
+#if os(iOS)
+import UIKit
+#elseif os(tvOS)
+import TVUIKit
+#elseif os(macOS)
+import AppKit
+#endif
+
+import AVKit
 import CoreMedia
 import CoreGraphics
 import AVFoundation
@@ -20,7 +28,7 @@ public class VideoImageGenerator: VideoFrameGenerator {
     
     var isRunning : Bool = true
     
-    let movie : AVMovie
+    let movie : AVAsset
     
     var times : [CMTime]
     
@@ -32,7 +40,7 @@ public class VideoImageGenerator: VideoFrameGenerator {
 
     // MARK : - 
     
-    init(movie:AVMovie,
+    init(movie:AVAsset,
          times:[CMTime],
          delegate:VideoFrameGeneratorDelegate,
          priority:VideoFrameGenerator.Priority,

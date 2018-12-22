@@ -59,10 +59,6 @@ public extension Double{
 }
 
 
-#if os(OSX)
-import CoreMedia
-import Cocoa
-
 extension CMTime{
 
     public func timeCodeRepresentation(_ fps: Double,showImageNumber:Bool=true)->String {
@@ -92,4 +88,3 @@ extension CMTime{
         return (Int(hours), Int(minutes), Int(nbOfSeconds), Int(numberOfImage), fps)
     }
 }
-#endif

@@ -9,16 +9,20 @@ import Foundation
 #if !USE_EMBEDDED_MODULES
 import Globals
 #endif
+#if os(iOS)
+import UIKit
+#elseif os(tvOS)
+import TVUIKit
+#elseif os(macOS)
 import AppKit
+#endif
 import AVKit
 import CoreMedia
-
 
 public enum VideoMetadataExtractorError:Error{
     case message(_ message:String)
 }
 public struct VideoMetadataExtractor{
-
 
     // MARK: - AVAssets metadata extraction
 

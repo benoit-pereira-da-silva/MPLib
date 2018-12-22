@@ -5,11 +5,18 @@
 //  Created by Benoit Pereira da silva on 15/12/2018.
 //
 
-import AppKit
+
+
 #if !USE_EMBEDDED_MODULES
 import Globals
 #endif
-
+#if os(iOS)
+import UIKit
+#elseif os(tvOS)
+import TVUIKit
+#elseif os(macOS)
+import AppKit
+#endif
 
 // This Comparator uses CoreImage to perform high performance image comparison.
 //

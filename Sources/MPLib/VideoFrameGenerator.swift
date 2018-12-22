@@ -9,7 +9,15 @@ import Foundation
 #if !USE_EMBEDDED_MODULES
 import Globals
 #endif
+
+#if os(iOS)
+import UIKit
+#elseif os(tvOS)
+import TVUIKit
+#elseif os(macOS)
 import AppKit
+#endif
+
 import CoreMedia
 import CoreGraphics
 import AVFoundation

@@ -11,7 +11,14 @@ import Foundation
 import Globals
 import HTTPClient
 #endif
+#if os(iOS)
+import UIKit
+#elseif os(tvOS)
+import TVUIKit
+#elseif os(macOS)
 import AppKit
+#endif
+
 import CoreMedia
 import AVFoundation
 
@@ -81,7 +88,7 @@ public class ShotsDetector{
 
     public let startTime: CMTime
     public let endTime: CMTime
-    public let movie: AVMovie
+    public let movie: AVAsset
     public var frameDuration: CMTime { return  (1 / self.source.fps).toCMTime() }
     public var totalNumber: Int64 {return Int64((self.endTime - self.startTime).seconds * self.source.fps)}
 
@@ -137,7 +144,7 @@ public class ShotsDetector{
 
     public init(source: VideoSource, startTime: CMTime, endTime: CMTime) throws{
 
-        self.movie = AVMovie(url: source.url)
+        self.movie = AVAsset(url: source.url)
         self.result = ShotsDetectionResult(source: source, shots: [Shot](), stats: ShotsStats())
 
         guard  self.movie.isReadable else{
