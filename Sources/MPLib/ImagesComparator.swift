@@ -6,7 +6,9 @@
 //
 
 import AppKit
+#if !USE_EMBEDDED_MODULES
 import Globals
+#endif
 
 
 // This Comparator uses CoreImage to perform high performance image comparison.

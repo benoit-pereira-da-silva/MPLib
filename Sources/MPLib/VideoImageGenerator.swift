@@ -7,7 +7,9 @@
 
 import Foundation
 import AppKit
+#if !USE_EMBEDDED_MODULES
 import Globals
+#endif
 import CoreMedia
 import CoreGraphics
 import AVFoundation

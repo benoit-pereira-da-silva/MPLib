@@ -7,11 +7,14 @@
 
 
 import Foundation
+#if !USE_EMBEDDED_MODULES
 import Globals
+import HTTPClient
+#endif
 import AppKit
 import CoreMedia
 import AVFoundation
-import HTTPClient
+
 
 public extension Notification.Name {
     public struct ShotsDetection {

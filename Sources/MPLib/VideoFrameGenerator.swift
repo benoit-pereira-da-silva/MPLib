@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if !USE_EMBEDDED_MODULES
 import Globals
+#endif
 import AppKit
 import CoreMedia
 import CoreGraphics

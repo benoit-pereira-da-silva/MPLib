@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 public let MPLib_VERSION: String = "1.0.0"
 
 public struct  MPLibConfiguration {
