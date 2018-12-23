@@ -96,7 +96,7 @@ public class ShotsDetector{
 
     // Concurrency.
     public var maxConcurrentComparison: Int = 8
-    public var comparisonQos: QualityOfService = QualityOfService.userInitiated
+    public var comparisonQos: QualityOfService = QualityOfService.userInteractive
     
     // The shot detection treshold
     public var differenceThreshold:Int = 40
