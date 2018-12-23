@@ -40,7 +40,7 @@ public struct VideoMetadataExtractor{
                                                success:@escaping (_ origin: Double?, _ fps: Double, _ duration: Double,_ width:Float, _ height:Float,_ url:URL)->(),
                                                failure:@escaping (_ message: String,_ url:URL)->()) ->(){
         syncOnMain{
-            let asset = AVAsset(url: url)
+            let asset = VideoAsset(url: url)
             var error: NSError?
             asset.loadValuesAsynchronously(forKeys: ["tracks", "duration"], completionHandler: { () -> Void in
 

@@ -10,6 +10,13 @@ import Foundation
 
 public let MPLib_VERSION: String = "1.0.0"
 
+import AVFoundation
+
+#if os(macOS)
+public typealias VideoAsset = AVMovie
+#else
+public typealias VideoAsset = AVAsset
+#endif
 public struct  MPLibConfiguration {
     static var componentsPath:String = ""
 

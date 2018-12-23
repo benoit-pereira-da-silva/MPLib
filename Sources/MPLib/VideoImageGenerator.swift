@@ -24,12 +24,12 @@ import AVFoundation
 
 public class VideoImageGenerator: VideoFrameGenerator {
 
+
     var counter : Int = 0
     
     var isRunning : Bool = true
-    
-    let movie : AVAsset
-    
+    let movie : VideoAsset
+
     var times : [CMTime]
     
     let delegate : VideoFrameGeneratorDelegate
@@ -40,12 +40,11 @@ public class VideoImageGenerator: VideoFrameGenerator {
 
     // MARK : - 
     
-    init(movie:AVAsset,
+    init(movie: VideoAsset,
          times:[CMTime],
          delegate:VideoFrameGeneratorDelegate,
          priority:VideoFrameGenerator.Priority,
          progressClosure:@escaping VideoImageGeneratorProgress){
-
         self.movie = movie
         self.times = times
         self.delegate = delegate
