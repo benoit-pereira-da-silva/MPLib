@@ -40,7 +40,9 @@ class ImagesComparator: NSObject {
     ///   - rightImage: the CGImage image on the right
     /// - Returns: return a value from 0 t0 255 where 0 is full match
     static public func measureDifferenceBetween( leftImage : CGImage, rightImage : CGImage) -> Int{
-        return ImagesComparator._measureDifferenceBetween(leftImage: CIImage(cgImage:leftImage), rightImage: CIImage(cgImage:rightImage))
+        let left: CIImage = CIImage(cgImage:leftImage)
+        let right: CIImage = CIImage(cgImage:rightImage)
+        return ImagesComparator._measureDifferenceBetween(leftImage: left, rightImage:right)
     }
     
     

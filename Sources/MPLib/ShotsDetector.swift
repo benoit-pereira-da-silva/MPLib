@@ -94,8 +94,8 @@ public class ShotsDetector{
 
     public var printDelegate:PrintDelegate?
 
-    // Concurrency.
-    public var maxConcurrentComparison: Int = 8
+    // Concurrency on an AppleTV4k 1080p images can be compared at 580 img / s using maxConcurrentComparison: 5
+    public var maxConcurrentComparison: Int = 5
     public var comparisonQos: QualityOfService = QualityOfService.userInteractive
     
     // The shot detection treshold
@@ -234,7 +234,7 @@ public class ShotsDetector{
             let duration:Double = measure {
                 self._analyzeCachedTimedImages()
             }
-            self.printIfVerbose("Bunch analysis. Size: \(self.bunchSize) Duration: \(duration) PerImg: \(duration / Double(self.bunchSize)) s/img")
+            self.printIfVerbose("Bunch analysis. Size: \(self.bunchSize) Duration: \(duration) | comparison: \(Double(self.bunchSize) / duration ) img/s")
             self.progress.completedUnitCount += Int64(self.bunchSize)
             self._nextBunch()
         }
@@ -268,7 +268,7 @@ public class ShotsDetector{
                         shotsCandidates.append(current)
                     }
                 }
-            }
+           }
         }
         operationQueue.waitUntilAllOperationsAreFinished()
         
