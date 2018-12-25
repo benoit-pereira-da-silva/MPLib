@@ -226,7 +226,7 @@ public class ShotsDetector{
     ///   - image: the image
     ///   - time: the extraction time
     fileprivate func  _extracted(_ image:CGImage,at time:CMTime){
-        let current = TimedImage.init(image: image, keyTime: time)
+        let current:TimedImage = TimedImage.init(image: image, keyTime: time)
         self._cachedBunch.append(current)
         self._bunchCountDown -= 1
         // Did we grab all the image
@@ -254,7 +254,7 @@ public class ShotsDetector{
         let operationQueue:OperationQueue = OperationQueue.init()
         operationQueue.maxConcurrentOperationCount = self.maxConcurrentComparison
         operationQueue.qualityOfService = self.comparisonQos
-        
+
         for (i,timedImage) in self._cachedBunch.enumerated(){
             operationQueue.addOperation {
                 // We don't want to recompute already computed differences

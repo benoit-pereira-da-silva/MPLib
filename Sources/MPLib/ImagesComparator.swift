@@ -47,6 +47,10 @@ class ImagesComparator: NSObject {
     
     
     static public func resize(image: CGImage, maxWidth: CGFloat = ImagesComparator.maxWidth,maxHeight: CGFloat = ImagesComparator.maxHeight) -> CGImage? {
+        if CGFloat(image.width) < maxWidth && CGFloat(image.height) < maxHeight {
+            // There is no need to resize
+            return image
+        }
         var scaleFactor: CGFloat = 0.0
         let imageWidth = CGFloat(image.width)
         let imageHeight = CGFloat(image.height)
